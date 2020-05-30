@@ -1,21 +1,14 @@
-from __future__ import print_function
-import os
-os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
-from keras.callbacks import LambdaCallback
-from keras.models import Sequential
-from keras.layers import LSTM, RepeatVector, TimeDistributed, Dense, Dropout, Activation, Input, Conv2D, Conv1D, Flatten, Reshape
-from keras.optimizers import Adam
-from numpy import array
-from numpy import argmax
+#!/usr/bin/env python3
+from keras.callbacks import ModelCheckpoint, LambdaCallback
 import numpy as np
+import os
 import sys
-from keras.callbacks import ModelCheckpoint
-from keras.callbacks import ReduceLROnPlateau
-from os import path
-
 import csv
-
+# Own library
 from supermario.model import model_cnn_3
+
+# Suppress TensorFlow messages
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 
 ####################################################
 # PARAMETERS
