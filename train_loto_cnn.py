@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 from keras.callbacks import ModelCheckpoint, LambdaCallback
 import numpy as np
 import os
