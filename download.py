@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import requests
 from clint.textui import progress
 import os
