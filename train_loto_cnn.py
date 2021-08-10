@@ -35,7 +35,7 @@ def data_load ():
 		for row in reader:
 			results.append (row)
 
-	# Remove firs n'line with array
+	# Remove first n'line with array
 	del results[0:2214]
 	# Save only numbers to list
 	data = []
