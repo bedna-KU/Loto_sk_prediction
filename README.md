@@ -8,9 +8,9 @@ Blog in Slovak language https://linuxos.sk/blog/zumpa/detail/umela-inteligencia-
 
 ## Install
 ```
-python3 -m pip install -r requirements.txt
 git clone https://github.com/bedna-KU/Loto_sk_prediction.git
 cd Loto_sk_prediction
+python3 -m pip install -r requirements.txt
 ```
 
 ## Download numbers
